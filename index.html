@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script src="./tableManager.js"></script>
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="buttons">
+			<button id="create-table" onclick="initTable()">Создать таблицу</button>
+			<button id="add-row" disabled onclick="createRow()">
+				Добавить строку
+			</button>
+			<button id="remove-row" disabled onclick="removeRow()">
+				Удалить строку
+			</button>
+			<input
+				type="text"
+				id="row-id"
+				disabled
+				placeholder="Номер строки для удаления"
+			/>
+		</div>
+		<div id="root"></div>
+	</body>
+	<script src="./script.js"></script>
+</html>
